@@ -3,11 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>my-first-site</title>
+  <title>VERTEX | ייעוץ מס מקצועי</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>שלום עולם</h1>
-  <script src="script.js"></script>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-en">VERTEX</span>
+    <span class="logo-sep">|</span>
+    <span class="logo-he">ייעוץ מס</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">בית</a></li>
+    <li><a href="about.html">אודות</a></li>
+    <li><a href="services.html">שירותים</a></li>
+    <li><a href="contact.html" class="nav-cta">צור קשר</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="תפריט">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="hero-ring" style="width:500px;height:500px;top:-150px;right:-150px;"></div>
+  <div class="hero-ring" style="width:800px;height:800px;top:-350px;right:-350px;"></div>
+
+  <div class="hero-content">
+    <div class="badge"><span class="badge-dot"></span>ייעוץ מס מוביל בישראל</div>
+
+    <h1>
+      פתרונות מיסוי<br>
+      <span class="hl">חכמים ויצירתיים</span><br>
+      <span class="hg">לעסקים מצליחים</span>
+    </h1>
+
+    <p class="hero-sub">
+      מומחיות מעמיקה בתחום המיסוי, תוך שימת דגש על הפחתת נטל המס החוקית
+      ובניית אסטרטגיה פיננסית ארוכת טווח — לעסקים, יזמים ומשפחות.
+    </p>
+
+    <div class="hero-actions">
+      <a href="services.html" class="btn btn-primary">גלה את השירותים שלנו</a>
+      <a href="contact.html" class="btn btn-outline">קבע פגישת ייעוץ</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">20<span>+</span></div>
+        <div class="stat-label">שנות ניסיון</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">500<span>+</span></div>
+        <div class="stat-label">לקוחות מרוצים</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">₪<span>מ'</span></div>
+        <div class="stat-label">חסכון מצטבר ללקוחות</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">98<span>%</span></div>
+        <div class="stat-label">שביעות רצון</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES BAND -->
+<div class="features-band">
+  <div class="container">
+    <div class="grid-3">
+      <div class="feat-item fade-in">
+        <div class="feat-num">01</div>
+        <div>
+          <div class="feat-title">ניסיון ומומחיות</div>
+          <div class="feat-desc">עשרים שנה של עבודה עם עסקים מכל הסקטורים — מסטארטאפים ועד תאגידים.</div>
+        </div>
+      </div>
+      <div class="feat-item fade-in" style="transition-delay:.1s">
+        <div class="feat-num">02</div>
+        <div>
+          <div class="feat-title">גישה הוליסטית</div>
+          <div class="feat-desc">לא רק מיסוי — ראייה רחבה של כל התמונה הפיננסית, עסקית ומשפחתית.</div>
+        </div>
+      </div>
+      <div class="feat-item fade-in" style="transition-delay:.2s">
+        <div class="feat-num">03</div>
+        <div>
+          <div class="feat-title">ליווי אישי צמוד</div>
+          <div class="feat-desc">נגישות מלאה, שיחות ישירות, ועדכונים בזמן אמת לאורך כל הדרך.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd fade-in">
+      <span class="eyebrow">מה אנחנו מציעים</span>
+      <div class="acc-bar"></div>
+      <h2 class="section-title">שירותי מיסוי <span>מקיפים</span></h2>
+      <p class="section-desc">פתרונות מותאמים אישית לכל אתגר מיסויי — מהיום-יום ועד לעסקאות המורכבות ביותר.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Card 1 -->
+      <div class="card fade-in">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5a14.5 14.5 0 010 19M12 2.5a14.5 14.5 0 000 19"/></svg>
+        </div>
+        <h3>ייעוץ מס בינלאומי</h3>
+        <p>מיסוי חברות בינלאומי, מחירי העברה, הגנה מפני כפל מס ועמידה בדרישות BEPS.</p>
+        <a href="services.html" class="card-link">
+          קרא עוד
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 8H2M6 4l-4 4 4 4"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card fade-in" style="transition-delay:.1s">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18M9 7h6l2 3H7L9 7zM3 10h18l-2 11H5L3 10z"/></svg>
+        </div>
+        <h3>ייצוג מול רשות המסים</h3>
+        <p>ייצוג מקצועי בהליכי ביקורת, פסיקות מקדמיות, גילוי מרצון ועררים.</p>
+        <a href="services.html" class="card-link">
+          קרא עוד
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 8H2M6 4l-4 4 4 4"/></svg>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card fade-in" style="transition-delay:.2s">
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 19v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <h3>תכנון מס ועסקאות</h3>
+        <p>ארגון מחדש, תכנון מס לחברות ויחידים, עסקאות מקרקעין ועסקי המשפחה.</p>
+        <a href="services.html" class="card-link">
+          קרא עוד
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 8H2M6 4l-4 4 4 4"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band fade-in">
+      <h2>מוכן להפחית את נטל המס שלך?</h2>
+      <p>פגישת ייעוץ ראשונה ללא עלות — נבחן יחד את המצב ונתכנן את הצעד הבא.</p>
+      <a href="contact.html" class="btn btn-gold">קבע פגישה חינם</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-in">
+    <div class="footer-copy">© 2026 VERTEX ייעוץ מס. כל הזכויות שמורות.</div>
+    <ul class="footer-links">
+      <li><a href="index.html">בית</a></li>
+      <li><a href="about.html">אודות</a></li>
+      <li><a href="services.html">שירותים</a></li>
+      <li><a href="contact.html">צור קשר</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

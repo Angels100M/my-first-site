@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>צור קשר | VERTEX ייעוץ מס</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="logo-en">VERTEX</span>
+    <span class="logo-sep">|</span>
+    <span class="logo-he">ייעוץ מס</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">בית</a></li>
+    <li><a href="about.html">אודות</a></li>
+    <li><a href="services.html">שירותים</a></li>
+    <li><a href="contact.html" class="active nav-cta">צור קשר</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="תפריט">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="breadcrumb"><a href="index.html">בית</a> <span>›</span> <span>צור קשר</span></div>
+  <h1>בואו <span class="hl">נדבר</span></h1>
+  <p class="psub">פגישת ייעוץ ראשונה ללא עלות. מלא את הטופס ונחזור אליך תוך יום עסקים.</p>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid fade-in">
+
+      <!-- FORM -->
+      <div>
+        <span class="eyebrow">שלח הודעה</span>
+        <div class="acc-bar"></div>
+        <h2 class="section-title" style="margin-bottom:2rem;">קבע פגישת <span>ייעוץ חינם</span></h2>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">שם פרטי *</label>
+              <input type="text" id="fname" name="fname" placeholder="ישראל" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">שם משפחה *</label>
+              <input type="text" id="lname" name="lname" placeholder="ישראלי" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">כתובת אימייל *</label>
+              <input type="email" id="email" name="email" placeholder="israel@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">טלפון</label>
+              <input type="tel" id="phone" name="phone" placeholder="050-0000000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">נושא הפנייה</label>
+            <input type="text" id="subject" name="subject" placeholder="לדוגמה: ייעוץ מס בינלאומי">
+          </div>
+
+          <div class="form-group">
+            <label for="message">תיאור הצורך *</label>
+            <textarea id="message" name="message" placeholder="ספר לנו על הצורך העסקי שלך — ככל שתפרט יותר, נוכל לעזור טוב יותר בפגישה." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1.05rem;">
+            שלח ופנה אלינו ←
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          תודה! קיבלנו את פנייתך ונחזור אליך תוך יום עסקים. 🙏
+        </div>
+      </div>
+
+      <!-- INFO CARD -->
+      <div class="info-card">
+        <h3>פרטי התקשרות</h3>
+        <p class="isub">זמינים לכל שאלה — ישירות, ללא מזכירות.</p>
+
+        <div class="cdet">
+          <div class="cdet-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18a2 2 0 012-2.17H5a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 6.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 13.92v3z"/></svg>
+          </div>
+          <div class="cdet-text">
+            <div class="cdet-lbl">טלפון</div>
+            <div class="cdet-val">[הכנס מספר טלפון]</div>
+          </div>
+        </div>
+
+        <div class="cdet">
+          <div class="cdet-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="cdet-text">
+            <div class="cdet-lbl">אימייל</div>
+            <div class="cdet-val">[הכנס כתובת אימייל]</div>
+          </div>
+        </div>
+
+        <div class="cdet">
+          <div class="cdet-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="cdet-text">
+            <div class="cdet-lbl">כתובת</div>
+            <div class="cdet-val">[הכנס כתובת משרד]</div>
+          </div>
+        </div>
+
+        <div class="cdet">
+          <div class="cdet-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+          </div>
+          <div class="cdet-text">
+            <div class="cdet-lbl">שעות פעילות</div>
+            <div class="cdet-val">ראשון–חמישי, 09:00–18:00</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.25rem;background:rgba(124,58,237,.1);border:1px solid var(--border-b);border-radius:.75rem;text-align:center;">
+          <div style="color:var(--acc-s);font-size:.88rem;font-weight:700;margin-bottom:.4rem;">פגישה ראשונה ללא עלות</div>
+          <div style="color:var(--muted);font-size:.82rem;">שיחת היכרות של 30 דקות — ללא התחייבות</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-in">
+    <div class="footer-copy">© 2026 VERTEX ייעוץ מס. כל הזכויות שמורות.</div>
+    <ul class="footer-links">
+      <li><a href="index.html">בית</a></li>
+      <li><a href="about.html">אודות</a></li>
+      <li><a href="services.html">שירותים</a></li>
+      <li><a href="contact.html">צור קשר</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
